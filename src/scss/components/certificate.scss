@@ -1,0 +1,45 @@
+.certificate {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__main-title {
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__swiper {
+        margin-top: 25px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__wrapper {
+    }
+    &__slide {
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__buttons{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.certificate-button-prev {
+}
+.certificate-button-next {
+}

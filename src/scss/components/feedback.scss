@@ -1,0 +1,210 @@
+.feedback {
+    margin-top: 80px;
+    &__container {
+        
+    }
+    &__block {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        //gap: 10px;
+        padding: 80px;
+        border-radius: 50px;
+        background: linear-gradient(0deg, #57C2C2, #57C2C2),
+linear-gradient(180deg, #AB91C4 0%, #775C96 100%),
+linear-gradient(270.56deg, #C69EF2 2.97%, #A17FC7 99.54%),
+linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
+
+    }
+    &__input{
+        border-radius: 50px;
+        font-size: 20px;
+        padding: 15px 20px;
+        border: none;
+        color: #55B8B8;
+        &::placeholder{
+            color: #55B8B8;
+        }
+        &:focus{
+            outline: 0;
+        }
+    }
+    &__title {
+        color:white;
+
+        font-size: 40px;
+        font-weight: 500;
+        text-align: left;
+    }
+    &__text {
+        color:white;
+
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    &__form {
+        margin-top: 15px;
+        display: flex;
+        gap: 15px;
+    }
+    &__button {
+        color:white;
+        background: #398585;
+        border: none;
+        padding: 0 40px;
+        border-radius: 50px;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.1);
+            transition: .3s;
+        }
+    }
+    
+    &__star {
+
+        position: absolute;
+
+        &_first {
+            right: -51px;
+            top: 9px;
+            transform: rotate(30deg);
+        }
+
+        &_second {
+            right: 118px;
+            top: 61px;
+            transform: rotate(-30deg) scale(0.8);
+        }
+
+        &_third {
+            right: -33px;
+            top: 174px;
+            transform: rotate(-10deg) scale(1.5);
+        }
+    }
+}
+.star-feedback{
+    fill: #429D9D8A;
+
+}
+@media (max-width: 1440px) { 
+    .feedback {
+
+        &__input{
+            border-radius: 50px;
+            font-size: 18px;
+            padding: 10px 15px;
+            border: none;
+            color: #55B8B8;
+            &::placeholder{
+                color: #55B8B8;
+            }
+            &:focus{
+                outline: 0;
+            }
+        }
+        &__button {
+            padding: 0 30px;
+            font-size: 18px;
+        }
+        &__block {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            border-radius: 50px;
+        }
+        &__star {
+
+            position: absolute;
+    
+            &_first {
+                right: -61px;
+                top: -16px;
+                transform: rotate(30deg) scale(0.8);
+            }
+    
+            &_second {
+                right: 95px;
+                top: 39px;
+                transform: rotate(-30deg) scale(0.6);
+            }
+    
+            &_third {
+                right: -49px;
+                top: 120px;
+                transform: rotate(-10deg) scale(1.3);
+            }
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .feedback {
+        &__form {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__button {
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+        &__star {
+
+            position: absolute;
+    
+            &_first {
+                right: -82px;
+                top: -22px;
+                transform: rotate(30deg) scale(0.6);
+            }
+    
+            &_second {
+                right: 8px;
+                top: 12px;
+                transform: rotate(-30deg) scale(0.4);
+            }
+    
+            &_third {
+                right: -72px;
+                top: 86px;
+                transform: rotate(-10deg) scale(1.1);
+            }
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .feedback {
+        &__block {
+            justify-content: center;
+            align-items: center;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+        }
+        &__form {
+            /*margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;*/
+        }
+        &__button {
+            //padding: 10px 15px;
+            //font-size: 18px;
+        }
+        &__star {
+
+            display: none;    
+
+        }
+    }
+}

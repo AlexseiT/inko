@@ -1,0 +1,52 @@
+
+<header class="header">
+    <div class = "burger__tint"></div>
+    <section class="container header__wrapper">
+      <a href = "#"class = "logo__wrapper">
+        <img src = "images/logo.svg" class = "header__logo">
+      </a>
+      <ul class = "header__menu">
+        <li class = "header-menu__element"><a class = "menu__link header-menu__link">О нас</a></li>
+        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Гелерея</a></li>
+        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Направления</a></li>
+        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Новости</a></li>
+        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Бюро переводов</a></li>
+        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Контакты</a></li>
+        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Отзывы</a></li>
+      </ul>
+      <a href = "#" class = "button button__header">Запись на собеседование</a>
+
+      <div class = "burger__menu">
+        <a class="burger header__burger" data-bs-toggle="collapse" href="#burger-content" role="button" aria-expanded="true" aria-controls="burger-content"> 
+          <div class="burger__line burger__line_first"></div>
+          <div class="burger__line burger__line_second"></div>
+          <div class="burger__line burger__line_last"></div>
+        </a>
+        <div class = "burger__content collapse" id = "burger-content">
+          <a href = "#" class = "logo__wrapper logo__burger">
+            @@include('helpers/svg.html', {'class': 'header__logo burger__logo','icon': 'logo'})
+            <!--<img src = "images/logo.svg" class = "header__logo">-->
+          </a>
+          <ul class = "burger__list">
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">О нас</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Гелерея</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Направления</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Новости</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Бюро переводов</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Контакты</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Отзывы</a></li>
+          </ul>
+          <a class = "button button__burger">Запись на собеседование</a>
+          <div class = "burger__icon-star">
+            <img class = "icon-star icon-star__first" src="images/burgerstar.svg" alt="">
+          </div>
+          <div class = "burger__icon-star">
+            <img class = "icon-star icon-star__second" src="images/burgerstar.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </header>
+  
+  
