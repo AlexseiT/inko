@@ -125,6 +125,17 @@ function initButtonDirection(){
         });
     }
 }
+
+function initTeamSwiper() {
+    const swiper = new Swiper(".team-gallery__swiper", {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".team-gallery__button-next",
+            prevEl: ".team-gallery__button-prev",
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initBurgerTint();
@@ -133,4 +144,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initSliderOurLifeMain();
     initSliderCertificate();
     initButtonDirection();
+    initTeamSwiper();
 })

@@ -1,6 +1,37 @@
 <section class="team">
+    <div class="our-life__blur"></div>
     <div class="container team__container">
-        <h2 class = "main-block__title team__title" >Команда педагогов «ИнкоЛинк»</h2>
-
+        <h2 class="main-block__title team__title" >Команда педагогов «ИнкоЛинк»</h2>
+        
+        <div class="team__gallery team-gallery">
+            <div class="team-gallery__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide team-gallery__slide">
+                        <img class="team-gallery__image" src="@img/team.jpg">
+                        <div class="team-gallery__info">
+                            <span class="team-gallery__name"> Иван Иванов Иван Иванов Иван Иванов</span>
+                            <span class="team-gallery__profession">Педагог Иван Иванов Иван Иванов</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide team-gallery__slide">
+                        <img class="team-gallery__image" src="@img/team.jpg">
+                        <div class="team-gallery__info">
+                            <span class="team-gallery__name">Иван Иванов</span>
+                            <span class="team-gallery__profession">Педагог</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide team-gallery__slide">
+                        <img class="team-gallery__image" src="@img/team.jpg">
+                        <div class="team-gallery__info">
+                            <span class="team-gallery__name">Иван Иванов</span>
+                            <span class="team-gallery__profession">Педагог</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('helpers/svg.html', {'class': 'team-gallery__button-next','icon': 'team-chevron'})
+            @@include('helpers/svg.html', {'class': 'team-gallery__button-prev','icon': 'team-chevron'})
+            @@include('helpers/svg.html', {'class': 'team__star','icon': 'starlist'})
+        </div>
     </div>
 </section>
