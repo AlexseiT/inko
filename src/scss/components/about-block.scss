@@ -267,6 +267,7 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     }
     .about-block-swiper{
         display: flex;
+        width: 100%;
     }
     .about-block__cards{
         display: none;
@@ -276,6 +277,7 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     }
     .card__title {
         font-size: 30px;
+        
     }
     .about-block-button{
         img{
@@ -291,6 +293,12 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     }
     .about-card__number{
         font-size: 25px;
+    }
+    .about-block__container {
+        margin-top: 0;
+    }
+    .about-block__main-title {
+        margin-top: 0;
     }
 }
 @media (max-width: 378px) { 

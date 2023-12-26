@@ -51,7 +51,7 @@
 }
 @media (max-width: 768px) { 
     .concept{
-        min-height: 900px;
+        min-height: 600px;
     }
     .concept__medal{
         display: none;
@@ -66,5 +66,15 @@
     .concept__text {
         width: 100%;
         font-size: 14px;
+    }
+    .concept__content {
+        margin-top: 0;
+        top: 0;
+    }
+    .concept__title {
+        text-shadow: 0px 0px 8px #00000040;
+        z-index: 5;
+        position: relative;
+        font-size: 42px;
     }
 }

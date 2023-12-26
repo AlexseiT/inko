@@ -321,6 +321,13 @@
             display: flex;
             gap: 10px;
         }
+        &_scroll {
+            .logo {
+                &__wrapper {
+                    height: 60px;
+                }
+            }
+        }
     }
     .burger__icon-star{
         display: flex;

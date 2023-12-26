@@ -84,6 +84,9 @@
         line-height: 18px;
         width: 230%;
     }
+    .destinations {
+        margin-top: 20px;
+    }
     .destinations__card {
         height: 80px;
     }
@@ -91,6 +94,7 @@
         height: 460px;
         overflow-y: hidden;
         transition: .3s;
+        margin-top: 10px;
         &_active{
             transition: .3s;
             height: 745px;

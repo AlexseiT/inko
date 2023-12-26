@@ -182,6 +182,7 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
 @media (max-width: 768px) { 
     
     .feedback {
+        margin-top: 10px;
         &__block {
             border-radius: 30px;
             justify-content: center;
