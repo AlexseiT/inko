@@ -16,6 +16,7 @@
     &__content{
         display: flex;
         flex-direction: column;
+        position: relative;
         width: 60%;
         gap: 10px;
     }
@@ -199,7 +200,7 @@
     
         &__button {
             width: 60%;
-            padding: 12px 30px;
+            padding: 12px 10px;
             font-size: 12px;
         }
     }

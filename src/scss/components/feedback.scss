@@ -180,22 +180,31 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     }
 }
 @media (max-width: 768px) { 
+    
     .feedback {
         &__block {
+            border-radius: 30px;
             justify-content: center;
             align-items: center;
+            padding: 40px 20px;
         }
         &__title{
             text-align: center;
+            font-size: 30px;
+            line-height: 30px;
         }
         &__text{
+            margin-top: 10px;
             text-align: center;
+            font-size: 16px;
+            line-height: 16px;
         }
         &__form {
             /*margin-top: 15px;
             display: flex;
             flex-direction: column;
             gap: 15px;*/
+            width: 100%;
         }
         &__button {
             //padding: 10px 15px;

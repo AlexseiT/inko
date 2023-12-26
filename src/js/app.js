@@ -106,12 +106,34 @@ function initSliderOurLifeMain(){
 }
 function initSliderCertificate(){
     const swiper = new Swiper(".certificate__swiper", {
-        slidesPerView: 6,
+        slidesPerView: 1,
+        breakpoints:
+        {
+            768: {
+            slidesPerView: 6
+            },
+        },
         spaceBetween: 50,
         navigation: {
             nextEl: ".certificate-button-next",
             prevEl: ".certificate-button-prev",
         }
+        });
+}   
+function initSliderDiploma(){
+    const swiper = new Swiper(".diploma__swiper", {
+        slidesPerView: 3,
+        loop: true,
+        breakpoints:
+        {
+            768: {
+                spaceBetween: 80
+            },
+        },
+        autoplay: {
+            delay: 2000,
+          },
+        spaceBetween: 30
         });
 }
 function initButtonDirection(){
@@ -145,4 +167,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initSliderCertificate();
     initButtonDirection();
     initTeamSwiper();
+    initSliderDiploma();
 })

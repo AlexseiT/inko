@@ -9,7 +9,7 @@
     }
     &__main-title{
         text-transform: uppercase;
-        font-size: 60px;
+        //font-size: 60px;
         text-align: center;
     }
     &__title {
@@ -252,14 +252,55 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     margin-top: 50px;
 }
 @media (max-width: 768px) { 
+    .about-card__number-wrapper {
+        top: -25px;
+    }
+    .about-card__back {
+        width: 180px;
+        top: -65px;
+    }
+    .about-card__image_main-right {
+        right: -53px;
+    }
+    .about-block__text {
+        padding-right: 100px;
+    }
     .about-block-swiper{
         display: flex;
     }
     .about-block__cards{
         display: none;
     }
+    .about-block__card {
+        height: 280px;
+    }
+    .card__title {
+        font-size: 30px;
+    }
+    .about-block-button{
+        img{
+            width: 90%;
+        }
+    }
+    .about__navigation{
+        gap: 40px;
+    }
+    .about-card__number-wrapper{
+        width: 40px;
+        height: 40px;
+    }
+    .about-card__number{
+        font-size: 25px;
+    }
 }
 @media (max-width: 378px) { 
+    .about-block__text {
+        padding-right: 40px;
+    }
+    .about-card__image_main {
+        right: -44px;
+        width: 60%;
+    }
 }
 .swiper-creative .swiper-slide {
 

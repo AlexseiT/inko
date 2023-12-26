@@ -1,6 +1,13 @@
 .diploma {
     background: linear-gradient(180deg, rgba(212,182,220,1), rgba(212,182,220,0.8), rgba(212,182,220,0.5), rgba(212,182,220,0));
     &_img {
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__container {
@@ -16,14 +23,17 @@
     }
 
     &__block {
-
+        position: relative;
         &_first {
+            .diploma__text{
+                width: 90%;
+            }
             padding: 30px;
             border-radius: 40px;
             background: white;
             display: flex;
             flex-direction: column;
-            width: 60%;
+            width: 55%;
             gap: 10px;
         }
 
@@ -31,7 +41,7 @@
             padding: 30px;
             border-radius: 40px;
             background: white;
-            width: 40%;
+            width: 45%;
         }
     }
 
@@ -46,23 +56,107 @@
     }
 
     &__star {
-
-
+        position: absolute;
         &_first {
+            right: -72px;
+            top: -8px;
+            transform: rotate(-20deg) scale(0.9);
         }
         &_second {
+            right: -81px;
+            bottom: -6px;
+            transform: rotate(20deg) scale(0.6);
         }
         &_thrid {
+            left: -100px;
+            top: 37px;
+            transform: rotate(30deg) scale(0.6);
         }
         &_four {
+            right: -107px;
+            bottom: 0px;
+            transform: rotate(50deg) scale(0.6);
         }
     }
-
-    &__diplomas {
+    &__swiper{
+        position: relative;
+        overflow: hidden;
         background: white;
+        border-radius: 40px;
+        padding: 50px 80px;
+    }
+    &__diplomas {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
     }
 }
 
 .star-diploma{
     fill: #B58DE152;
+}
+@media (max-width: 1200px) { 
+    .diploma__block_first .diploma__text {
+        width: 100%;
+    }
+    .diploma__text{
+        font-size: 16px;
+    }
+    .diploma__title{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .diploma__text-blocks{
+        gap: 20px;
+    }
+    .diploma__star_first {
+        left: -35px;
+        top: 258px;
+        transform: rotate(-20deg) scale(0.9);
+    }
+}
+@media (max-width: 768px) { 
+    .diploma__text-blocks{
+        flex-direction: column;
+    }
+    .diploma__block_first{
+        width: 100%;
+        border-radius: 25px;
+    }
+    .diploma__block_second{
+        width: 100%;
+        border-radius: 25px;
+    }
+    .diploma__text{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .diploma__block_second{
+        display: flex;
+    }
+    .diploma__title{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .diploma__star_first {
+        right: -774px;
+        top: -114px;
+        transform: rotate(-20deg) scale(0.6);
+    }
+    .diploma__star_second {
+        right: -111px;
+        bottom: -31px;
+        transform: rotate(20deg) scale(0.4);
+    }
+    .diploma__block_first .diploma__text {
+        width: 90%;
+    }
+    .diploma__swiper {
+        border-radius: 20px;
+        padding: 10px 10px;
+    }
+    .diploma__star {
+        display: none;
+    }
 }
