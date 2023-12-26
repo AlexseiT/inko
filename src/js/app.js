@@ -119,11 +119,17 @@ function initSliderCertificate(){
             prevEl: ".certificate-button-prev",
         }
         });
-}
+}   
 function initSliderDiploma(){
     const swiper = new Swiper(".diploma__swiper", {
         slidesPerView: 3,
         loop: true,
+        breakpoints:
+        {
+            768: {
+                spaceBetween: 80
+            },
+        },
         autoplay: {
             delay: 2000,
           },
