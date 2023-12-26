@@ -10,7 +10,9 @@
     &__title {
         margin-top: 0px;
     }
-
+    &__scroll-button{
+        display: none;
+    }
     &__cards {
         margin-top: 60px;
         display: flex;
@@ -84,5 +86,23 @@
     }
     .destinations__card {
         height: 80px;
+    }
+    .destinations__cards{
+        height: 460px;
+        overflow-y: hidden;
+        transition: .3s;
+        &_active{
+            transition: .3s;
+            height: 745px;
+        }
+    }
+    .destinations__scroll-button{
+        margin-top: 20px;
+        display: flex;
+        transition: .3s;
+        &_active{
+            transition: .3s;
+            transform: rotate(180deg);
+        }
     }
 }

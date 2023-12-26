@@ -159,6 +159,9 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     top: 0px;
 }
 @media (max-width: 1440px) { 
+    .about-block__text{
+        padding-right: 100px;
+    }
     .about-block {
 
         &__container {
@@ -178,7 +181,7 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     
         &__card {
             width: auto;
-            height: 500px;
+            //height: 500px;
         }
     
         &__text {
@@ -205,81 +208,21 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     }
 }
 @media (max-width: 1200px) { 
-    .about-block {
-
-        &__container {
-            margin-top: 60px;
-        }
-    
-        &__title {
-
-        }
-        &_height {
-            line-height: 26px;
-        }
-        &__cards {
-            gap: 25px;
-            margin-top: 60px;
-        }
-    
-        &__card {
-            width: auto;
-            height: 360px;
-        }
-    
-        &__text {
-            
-            padding-right: 0px;
-        }
+    .about-block__text {
+        padding-right: 45px;
     }
-    .about-card {
-        &__image {
-            position: absolute;
-            &_main-right {
-                top: 0px;
-            }
-        }
-        &__medal-first{
-           display: none;
-        }
-        &__medal-second{
-            display: none;
-        }
+    .about-block__card {
+        height: 300px;
     }
-    .about-card {
-        &__number-wrapper{
-            width: 30px;
-            height: 30px;
-            top: -20px;
-        }
-        &__number {
-        
-        }
-        &__image {
-            &_main {
-                width: 80%;
-                right: -40px;
-                top: 10px;
-            }
-            &_main-right {
-                right: -35px;
-                top: 0px;
-            }
-            &_blur {
-
-                width: 30%;
-                top: 5px;
-                left: 10px;
-            }
-    
-            &_blur-minus {
-                filter: blur(3px);
-                transform: rotate(-45deg);
-                width: 40%;
-                top: 50px;
-                left: -5px;
-            }
-        }
+    .about-card__content {
+        padding: 40px 20px;
+    }
+    .about-card__image_main-right {
+        right: -34px;
+    }
+    .about-card__image_main-top {
+        right: -52px;
+        top: -12px;
     }
 }
 .about-block-swiper{

@@ -62,7 +62,7 @@ function initSliderDirectionMain(){
 }
 function initSliderAboutMain(){
     const swiper = new Swiper(".about-block__swiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         //spaceBetween: 30,
         centeredSlides: true,
         loopPreventsSliding: true,
@@ -70,6 +70,12 @@ function initSliderAboutMain(){
         navigation: {
             nextEl: ".about-block-button-next",
             prevEl: ".about-block-button-prev",
+        },
+        breakpoints:
+        {
+            768: {
+            slidesPerView: 3
+            },
         },
         effect: "creative",
         loopedSlides: 3,
@@ -108,7 +114,17 @@ function initSliderCertificate(){
         }
         });
 }
-
+function initButtonDirection(){
+    
+    const button = document.querySelector(".destinations__scroll-button")
+    if (button){
+        const cards = document.querySelector(".destinations__cards");
+        button.addEventListener("click", (event) => {
+            cards.classList.toggle("destinations__cards_active");
+            button.classList.toggle("destinations__scroll-button_active");
+        });
+    }
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initBurgerTint();
@@ -116,4 +132,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initSliderAboutMain();
     initSliderOurLifeMain();
     initSliderCertificate();
+    initButtonDirection();
 })
