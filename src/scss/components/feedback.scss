@@ -10,7 +10,7 @@
         flex-direction: column;
         //gap: 10px;
         padding: 80px;
-        border-radius: 30px;
+        border-radius: 50px;
         background: linear-gradient(0deg, #57C2C2, #57C2C2),
 linear-gradient(180deg, #AB91C4 0%, #775C96 100%),
 linear-gradient(270.56deg, #C69EF2 2.97%, #A17FC7 99.54%),
@@ -183,6 +183,7 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     
     .feedback {
         &__block {
+            border-radius: 30px;
             justify-content: center;
             align-items: center;
             padding: 40px 20px;

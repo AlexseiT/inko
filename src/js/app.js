@@ -120,6 +120,16 @@ function initSliderCertificate(){
         }
         });
 }
+function initSliderDiploma(){
+    const swiper = new Swiper(".diploma__swiper", {
+        slidesPerView: 3,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+          },
+        spaceBetween: 30
+        });
+}
 function initButtonDirection(){
     
     const button = document.querySelector(".destinations__scroll-button")
@@ -139,4 +149,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initSliderOurLifeMain();
     initSliderCertificate();
     initButtonDirection();
+    initSliderDiploma();
 })
