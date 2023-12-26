@@ -1,0 +1,70 @@
+.concept {
+    background: url('@img/back-concept.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    min-height: 1100px;
+    &__container {
+        height: 100%;
+    }
+    &__content{
+        margin-top: 200px;
+        align-items: center;
+        gap: 20px;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__medal{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+    }
+    &__button{
+        width: min-content;
+        font-size: 30px;
+        padding: 15px 30px;
+    }
+    &__text{
+        width: 70%;
+        font-size: 20px;
+    }
+}
+@media (max-width: 1440px) { 
+    .concept__medal{
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 1200px) { 
+    .concept__medal{
+        transform: scale(0.6);
+    }
+    .concept__text {
+        width: 100%;
+        font-size: 18px;
+    }
+    .concept__button {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) { 
+    .concept{
+        min-height: 900px;
+    }
+    .concept__medal{
+        display: none;
+    }
+    .concept__block{
+        align-items: center;
+    }
+    .concept__button {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+    .concept__text {
+        width: 100%;
+        font-size: 14px;
+    }
+}
