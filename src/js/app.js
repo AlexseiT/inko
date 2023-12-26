@@ -106,7 +106,13 @@ function initSliderOurLifeMain(){
 }
 function initSliderCertificate(){
     const swiper = new Swiper(".certificate__swiper", {
-        slidesPerView: 6,
+        slidesPerView: 1,
+        breakpoints:
+        {
+            768: {
+            slidesPerView: 6
+            },
+        },
         spaceBetween: 50,
         navigation: {
             nextEl: ".certificate-button-next",
