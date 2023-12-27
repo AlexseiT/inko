@@ -14,7 +14,7 @@ const images = () => {
     .pipe(plugins.if(isBuild, webp()))
     .pipe(plugins.if(isBuild, gulp.dest(filePaths.build.images)))
     .pipe(plugins.if(isBuild, gulp.src(filePaths.src.images)))
-    .pipe(plugins.if(isBuild, plugins.newer(filePaths.build.images)))
+   .pipe(plugins.if(isBuild, plugins.newer(filePaths.build.images)))
     .pipe(
       plugins.if(
         isBuild,
@@ -22,7 +22,7 @@ const images = () => {
           progressive: true,
           svgoPlugins: [{ removeViewBox: false }],
           interlaced: true,
-          optimizationLevel: 3, // 0 to 7
+          optimizationLevel: 0, // 0 to 7
         })
       )
     )

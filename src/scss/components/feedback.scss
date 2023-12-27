@@ -41,7 +41,7 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
         color:white;
 
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 0em;
         text-align: left;
 
@@ -182,7 +182,7 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
 @media (max-width: 768px) { 
     
     .feedback {
-        margin-top: 10px;
+        margin-top: 80px;
         &__block {
             border-radius: 30px;
             justify-content: center;
@@ -201,8 +201,8 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
             line-height: 16px;
         }
         &__form {
-            /*margin-top: 15px;
-            display: flex;
+            margin-top: 30px;
+            /*display: flex;
             flex-direction: column;
             gap: 15px;*/
             width: 100%;

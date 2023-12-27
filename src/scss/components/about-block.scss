@@ -17,7 +17,7 @@
         margin-top: 20px;
         padding: 0;
         width: 80%;
-        font-weight: bold;
+        font-weight: 500;
     }
     &__title_height {
         line-height: 26px;
@@ -208,6 +208,12 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     }
 }
 @media (max-width: 1200px) { 
+    .about-block {
+
+        &__title_height {
+            line-height: 18px;
+        }
+    }
     .about-block__text {
         padding-right: 45px;
     }
@@ -252,6 +258,12 @@ linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
     margin-top: 50px;
 }
 @media (max-width: 768px) { 
+    .about-block {
+
+        &__title_height {
+            line-height: 26px;
+        }
+    }
     .about-card__number-wrapper {
         top: -25px;
     }
