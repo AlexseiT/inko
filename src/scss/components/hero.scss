@@ -1,5 +1,5 @@
 .hero {
-    background: url('@img/hero-main.jpg') no-repeat 50% 50%;
+    background: url('@img/hero-main.jpg') no-repeat 45% 50%;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -45,8 +45,9 @@
     }
 
     &__button {
-        width: 65%;
+        width: 67%;
         padding: 16px 30px;
+        font-size: 24px;
     }
 }
 .white__shadow {
@@ -116,7 +117,7 @@
         }
     
         &__button {
-            width: 60%;
+            width: 63%;
             padding: 16px 30px;
         }
     }
@@ -192,6 +193,7 @@
         &__title {
             font-size: 45px;
             line-height: 45px;
+            margin: 0;
         }
     
         &__signature {
@@ -199,6 +201,7 @@
         }
     
         &__button {
+            margin-top: 15px;
             width: 60%;
             padding: 12px 10px;
             font-size: 12px;
@@ -211,13 +214,17 @@
     .hero__text{
         text-align: center;
     }
+    .hero__content {
+
+        top: 120px;
+     }
 
 }
 @media (max-width: 378px) { 
 
     .hero__content {
 
-        top: 230px;
+       top: 120px;
     }
 }
 .hero__blur {

@@ -66,7 +66,7 @@ function initSliderAboutMain(){
         //spaceBetween: 30,
         centeredSlides: true,
         loopPreventsSliding: true,
-        //loop: true,
+        loop: true,
         navigation: {
             nextEl: ".about-block-button-next",
             prevEl: ".about-block-button-prev",

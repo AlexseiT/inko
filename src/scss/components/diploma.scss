@@ -160,6 +160,16 @@
         padding: 10px 10px;
     }
     .diploma__star {
-        display: none;
+        //display: none;
+    }
+    .diploma{
+        &__star {
+            &_thrid {
+                display: none;
+            }
+            &_four {
+                display: none;
+            }
+        }
     }
 }
