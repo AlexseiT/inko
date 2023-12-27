@@ -83,12 +83,12 @@ function initSliderAboutMain(){
             limitProgress: 3,
             prev: {
                 translate: ["-100%", 0, 0],
-                //opacity: 0.3,
+                opacity: 0.7,
                 scale: .75
             },
             next: {
                 translate: ["100%", 0, 0],
-                //opacity: 0.3,
+                opacity: 0.7,
                 scale: .75
             }
         }
