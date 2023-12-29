@@ -1,7 +1,7 @@
 
 .our-life {
     margin-top: 0px;
-    background: url('@img/our-life.jpg') no-repeat 50% 50%;
+    background: url('@img/our-life.jpg') no-repeat 55% 50%;
     min-height: 1100px;
     position: relative;
     &__container{
@@ -9,7 +9,7 @@
     &__content{
         position: absolute;
         bottom: 0;
-        right: 25%;
+        right: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
