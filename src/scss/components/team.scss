@@ -112,12 +112,13 @@
 
 @include media($small-desktop) {
     .team {
+        margin-top: 20px;
         padding-top: 40px;
         padding-bottom: 70px;
         height: 840px;
         &__title {
             font-size: 80px;
-            margin-top: 60px;
+            margin-top: 0px;
         }
         &__gallery {
             width: 400px;
@@ -125,7 +126,7 @@
         }
     }
     .team-gallery {
-        bottom: 20px;
+        bottom: -40px;
         &__slide {
             padding-bottom: 130px;
         }
