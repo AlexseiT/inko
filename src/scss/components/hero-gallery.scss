@@ -1,0 +1,69 @@
+
+.hero-gallery {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-gallery.jpg) no-repeat 50% 0%;
+
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__arrow-icon {
+        right: 70%;
+        bottom: -95%;
+    }
+}
+@media (max-width: 1440px) { 
+    .hero-gallery {
+    
+        &__container {
+        }
+    
+        &__content {
+        }
+    
+        &__arrow-icon {
+            right: 68%;
+            bottom: -110%;
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .hero-gallery {
+    
+        &__container {
+        }
+    
+        &__content {
+        }
+    
+        &__arrow-icon {
+            right: 62%;
+            bottom: -144%;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .hero-gallery {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-gallery.jpg) no-repeat 78% 0%;
+        &__container {
+        }
+    
+        &__content {
+        }
+    
+        &__arrow-icon {
+            right: 76%;
+            bottom: -48%;
+            transform: rotate(-10deg);
+        }
+    }
+}
+
+@media (max-width: 378px) { 
+
+}
+
+
+

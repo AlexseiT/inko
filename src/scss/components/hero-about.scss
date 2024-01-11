@@ -1,0 +1,188 @@
+.hero-about {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-about.jpg) no-repeat 45% 50%;
+
+    &__container {
+    }
+    &__content {
+        width: 100%;
+        display: block;
+        margin-top: 165px;
+    }
+    &__title {
+        font-size: 80px;
+    }
+    &__accent {
+        font-size: 30px;
+        line-height: 1;
+        position: absolute;
+        bottom: 3%;
+        left: 33%;
+        font-weight: 400;
+    }
+    &__button {
+        left: 10px;
+        bottom: 40px;
+        right: auto;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+            transition: .3s;
+        }
+    }
+    
+}
+.hero {
+
+    &__breadcrumbs {
+        position: absolute;
+        top: 20%;
+        display: inline;
+        li{
+            display: inline;
+            list-style-type: none;
+            color: white;
+        }
+    }
+}
+.hero-breadcrumbs {
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+    }
+}
+@media (max-width: 1440px) { 
+    .hero-about {
+    
+        &__container {
+        }
+        &__content {
+            width: 100%;
+            display: block;
+            margin-top: 155px;
+        }
+        &__title {
+            font-size: 70px;
+        }
+        &__accent {
+            font-size: 28px;
+            left: 38%;
+        }
+        &__button {
+            img{
+                transform: scale(0.8);
+            }
+        }
+        
+    }
+    .hero {
+    
+        &__breadcrumbs {
+        }
+    }
+    .hero-breadcrumbs {
+    
+        &__text {
+
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .hero-about {
+    
+        &__container {
+        }
+        &__content {
+            width: 100%;
+            display: block;
+            margin-top: 165px;
+        }
+        &__title {
+            font-size: 50px;
+        }
+        &__accent {
+            font-size: 18px;
+        }
+        &__button {
+            img{
+                transform: scale(0.6);
+            }
+        }
+        
+    }
+    .hero {
+    
+        &__breadcrumbs {
+        }
+    }
+    .hero-breadcrumbs {
+    
+        &__text {
+
+        }
+    }
+
+}
+@media (max-width: 768px) { 
+    .hero-about {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-about.jpg) no-repeat 87% 50%;
+        &__container {
+        }
+        &__content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 150px;
+            align-items: center;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__accent {
+            position: relative;
+            font-weight: 300;
+            left: auto;
+            right: auto;
+            font-size: 18px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+        &__button {
+        }
+        
+    }
+    .hero {
+    
+        &__breadcrumbs {
+            display: none;
+        }
+    }
+    .hero-breadcrumbs {
+    
+        &__text {
+
+        }
+    }
+
+}
+
+@media (max-width: 378px) { 
+    .hero-about {
+        &__content {
+            width: 100%;
+            gap: 8px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__accent {
+            font-size: 18px;
+        }
+    }
+
+}

@@ -1,0 +1,127 @@
+.hero-directions {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-directions.jpg) no-repeat 45% 0%;
+    &__container {
+    }
+    &__content {
+        width: 100%;
+    }
+    &__accent {
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 500;
+        width: 70%;
+    }
+    &__arrow-icon {
+        left: 11%;
+        bottom: 19%;
+        right: auto;
+        width: auto;
+        height: auto;
+    }
+    &__button {
+        margin-top: 30px;
+        width: min-content;
+        padding: 12px 40px;
+    }
+}
+@media (max-width: 1440px) { 
+    .hero-directions {
+        &__container {
+        }
+        &__content {
+        }
+        &__accent {
+            font-size: 40px;
+            width: 60%;
+        }
+        &__arrow-icon {
+            left: 11%;
+            bottom: 21%;
+            right: auto;
+            width: auto;
+            height: auto;
+            transform: scale(0.8);
+        }
+        &__button {
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .hero-directions {
+        &__container {
+        }
+        &__content {
+        }
+        &__accent {
+            font-size: 30px;
+            width: 70%;
+        }
+        &__arrow-icon {
+            left: 12%;
+            bottom: 20%;
+            right: auto;
+            width: auto;
+            height: auto;
+            transform: scale(0.6);
+        }
+        &__button {
+            margin-top: 25px;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .hero-directions {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-directions.jpg) no-repeat 86% 0%;
+        &__container {
+        }
+        &__content {
+            top: 170px;
+        }
+        &__accent {
+            font-size: 18px;
+            width: 70%;
+        }
+        &__arrow-icon {
+            left: 12%;
+            bottom: 20%;
+            right: auto;
+            width: auto;
+            height: auto;
+            transform: scale(0.6);
+        }
+        &__button {
+            margin-top: 15px;
+            font-size: 18px;
+            padding: 10px 30px;
+        }
+    }
+}
+
+@media (max-width: 378px) { 
+    .hero-directions {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-directions.jpg) no-repeat 86% 0%;
+        &__container {
+        }
+        &__content {
+            top: 170px;
+        }
+        &__accent {
+            font-size: 16px;
+            width: 70%;
+        }
+        &__arrow-icon {
+            left: 12%;
+            bottom: 20%;
+            right: auto;
+            width: auto;
+            height: auto;
+            transform: scale(0.6);
+        }
+        &__button {
+            margin-top: 15px;
+            font-size: 18px;
+            padding: 10px 30px;
+        }
+    }
+}
+

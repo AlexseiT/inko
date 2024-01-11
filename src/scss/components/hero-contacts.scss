@@ -1,0 +1,41 @@
+
+.hero-contacts {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-contacts.jpg) no-repeat 50% 0%;
+    &__container {
+    }
+
+    &__accent {
+        font-size: 28px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 1440px) { 
+    .hero-contacts {
+        &__accent {
+            font-size: 25px;
+            font-weight: 300;
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .hero-contacts {
+        &__accent {
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .hero-contacts {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-contacts.jpg) no-repeat 60% 0%;
+        &__accent {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media (max-width: 378px) { 
+
+}

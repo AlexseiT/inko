@@ -51,9 +51,6 @@ function initSliderDirectionMain(){
         },
         breakpoints:
         {
-            1200: {
-            slidesPerView: 3
-            },
             768: {
                 slidesPerView: 2
             }

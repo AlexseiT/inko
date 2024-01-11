@@ -29,11 +29,13 @@ a {
 
 .main {
     flex-grow: 1;
-    //background: url('@img/background.png') repeat-y 100% 100%;
     background-size:cover;
     width: 100%;
 }
-
+.main-custom{
+    background: url('@img/background.png') repeat-y 50% 100%;
+    background-size: 110% auto;
+}
 .container {
     max-width: #{$desktop + 'px'};
     width: 100%;
