@@ -1,0 +1,213 @@
+.contacts {
+    margin-top: 210px;
+    margin-bottom: 150px;
+    &__container {
+    }
+
+    &__block {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        align-items: center;
+        iframe{
+            border-radius: 40px; 
+            width: 63%;
+        }
+    }
+
+    &__content {
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: absolute;
+        background: linear-gradient(180deg, #AB91C4 0%, #775C96 100%),
+        linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);    
+        height: 450px;
+        width: 550px; 
+        border-radius: 50px;   
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border: 1px solid white;
+    }
+
+    &__title {
+        color: white;
+
+        font-size: 38px;
+        font-weight: 400;
+    }
+
+    &__element {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        display: relative;
+    }
+    
+    &__text {
+        color: white;
+
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__star{
+        position: absolute;
+        right: 12%;
+        bottom: 15%;
+        transform: rotate(-115deg) scale(2.5) !important;
+        opacity: 0.4;
+    }
+}
+@media (max-width: 1440px) { 
+    .contacts {
+        &__container {
+        }
+    
+        &__block {
+            iframe{ 
+                width: 59%;
+            }
+        }
+    
+        &__content {
+            height: 400px;
+            width: 500px; 
+            gap: 10px;
+        }
+    
+        &__title {
+            font-size: 32px;
+        }
+    
+        &__element {
+            gap: 10px;
+            img{
+                transform: scale(0.9);
+            }
+        }
+        
+        &__text {
+            font-size: 20px;
+        }
+    
+        &__star{
+            position: absolute;
+            right: 12%;
+            bottom: 15%;
+            transform: rotate(-115deg) scale(2.2) !important;
+            opacity: 0.4;
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .contacts {
+        margin-top: 120px;
+        margin-bottom: 90px;
+        &__container {
+        }
+    
+        &__block {
+            iframe{ 
+                width: 59%;
+                height: 320px;
+                border-radius: 20px; 
+            }
+        }
+    
+        &__content {
+            height: 280px;
+            width: 320px; 
+            gap: 10px;
+            padding: 30px;
+            border-radius: 30px; 
+        }
+    
+        &__title {
+            font-size: 22px;
+        }
+    
+        &__element {
+            &_first{
+                margin-top: 10px;
+            }
+            gap: 10px;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+        &__text {
+            font-size: 16px;
+        }
+    
+        &__star{
+            position: absolute;
+            right: 10%;
+            bottom: 12%;
+            transform: rotate(-115deg) scale(1.8) !important;
+            opacity: 0.4;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .contacts {
+        margin-top: 120px;
+        margin-bottom: 350px;
+        &__container {
+        }
+    
+        &__block {
+            iframe{ 
+                width: 100%;
+                height: 220px;
+                border-radius: 20px; 
+            }
+            justify-content: center;
+        }
+    
+        &__content {
+            top:auto;
+            bottom: -260px;
+            left: auto;
+            right: auto;
+        }
+    
+        &__title {
+            font-size: 22px;
+        }
+    
+        &__element {
+            &_first{
+                margin-top: 10px;
+            }
+            gap: 10px;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+        &__text {
+            font-size: 16px;
+        }
+    
+        &__star{
+            position: absolute;
+            right: 10%;
+            bottom: 12%;
+            transform: rotate(-115deg) scale(1.8) !important;
+            opacity: 0.4;
+        }
+    }
+}
+
+@media (max-width: 378px) { 
+
+}

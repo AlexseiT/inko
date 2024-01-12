@@ -50,14 +50,31 @@ a {
 html, body {
     overflow-x: hidden;
 }
+.fslightbox-flex-centered{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
 @include media($desktop) {
     .container {
         max-width: #{$small-desktop + 'px'};
+    }
+    .fslightbox-flex-centered{
+        max-width: #{$small-desktop + 'px'};
+        justify-content: center;
+        img{
+            border-radius: 25px;
+        }
     }
 }
 
 @include media($small-desktop) {
     .container {
+        max-width: #{$laptop + 'px'};
+    }
+    .fslightbox-flex-centered{
         max-width: #{$laptop + 'px'};
     }
 }
@@ -66,10 +83,70 @@ html, body {
     .container {
         max-width: #{$tablet + 'px'};
     }
+    .fslightbox-flex-centered{
+        max-width: #{$tablet + 'px'};
+    }
 }
-
+.fslightbox-toolbar-button:nth-child(1){
+    display: none;
+}
+.fslightbox-slide-btn{
+    border-radius: 50px;
+    background: #AB91C4 !important;
+}
+.fslightbox-slide-btn-container-next {
+    padding-right: 20px !important;
+}
+.fslightbox-slide-btn-container-previous {
+    padding-left: 20px !important;
+}
+.fslightbox-toolbar-button{
+    width: 45px;
+    padding: 0 !important;
+}
+.fslightbox-toolbar{
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgb(171, 145, 196) 0%, rgb(171, 145, 196) 0%, rgb(119, 92, 150) 100%) padding-box, 
+    linear-gradient(to bottom, white, #775c96) border-box !important;
+    border: 2px solid transparent;
+    height: 45px !important;
+    width: 45px !important; 
+    margin-bottom: 390px;
+}
+.fslightbox-nav{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @include media($tablet) {
     .container {
         max-width: #{$mobile + 'px'};
+    }
+    .fslightbox-flex-centered{
+        max-width: #{$mobile + 'px'};
+        padding: 0px 40px;
+        img{
+            width: 100% !important;
+            height: auto !important;
+            border-radius: 15px !important;
+        }
+    }
+    .fslightbox-slide-btn-container-next {
+        padding-right: 2px !important;
+        div{
+            transform: scale(0.8);
+        }
+    }
+    .fslightbox-slide-btn-container-previous {
+        padding-left: 2px !important;
+        div{
+            transform: scale(0.8);
+        }
+    }
+    .fslightbox-toolbar{
+        margin-bottom: 200px !important;
+        transform: scale(10px);
     }
 }
