@@ -110,15 +110,24 @@ html, body {
     linear-gradient(to bottom, white, #775c96) border-box !important;
     border: 2px solid transparent;
     height: 45px !important;
-    width: 45px !important; 
-    margin-bottom: 390px;
+    width: 45px !important;
+    right: 20px !important;
+    top: 20px !important; 
+    //margin-bottom: 390px;
 }
 .fslightbox-nav{
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative !important;
+    height: 100%!important;
+    //display: flex!important;
+    //justify-content: center!important;
+    //align-items: center!important;
+}
+.fslightbox-slide-number-container{
+    position: absolute !important;
+    left: 20px !important;
+    top: 20px !important; 
+    height: auto !important;
+    justify-content: start !important;
 }
 @include media($tablet) {
     .container {

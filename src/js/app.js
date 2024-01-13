@@ -185,6 +185,17 @@ function initSliderReviews(){
         }
         });
 }
+function initCloseButtons(){
+    const elements = document.querySelectorAll(".fslightbox-absoluted.fslightbox-full-dimension.fslightbox-flex-centered");
+    elements.forEach(element => 
+        element.querySelector("div").insertAdjacentHTML('afterBegin', '<div class="fslightbox-toolbar"><div class="fslightbox-toolbar-button fslightbox-flex-centered" title="Enter fullscreen"><svg width="20px" height="20px" viewBox="0 0 18 18"><path class="fslightbox-svg-path" d="M4.5 11H3v4h4v-1.5H4.5V11zM3 7h1.5V4.5H7V3H3v4zm10.5 6.5H11V15h4v-4h-1.5v2.5zM11 3v1.5h2.5V7H15V3h-4z"></path></svg></div><div class="fslightbox-toolbar-button fslightbox-flex-centered" title="Close"><svg width="20px" height="20px" viewBox="0 0 24 24"><path class="fslightbox-svg-path" d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path></svg></div></div>')
+    );
+}
+function BindPopup(){
+    Fancybox.bind('[data-fancybox]', {
+        // Custom options for all galleries
+      });    
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initBurgerTint();
@@ -197,4 +208,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initSliderDiploma();
     initButtonGalleryOpen();
     initSliderReviews();
+    BindPopup();
 })
