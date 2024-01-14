@@ -15,6 +15,12 @@
     }
 
     &__element {
+        &:hover{
+            .directions__img{            
+                transform: scale(1.1);
+                transition: .3s;
+            }
+        }
         position: relative;
         background-color: #A085BA;
         width: 100%;
@@ -69,6 +75,7 @@
     }
 
     &__img {
+        transition: .3s;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -110,6 +117,111 @@
 .star-directions{
     fill: #59C8C8;
 }
+
+.popup-direction {
+    width: 1000px;
+    height: auto;
+    padding: 0 !important;
+    &__block {
+        display: flex;
+        height: 100%;
+    }
+
+    &__left {
+        width: 50%;
+        //padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__button{
+        width: fit-content;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        border-radius: 20px;
+        padding: 12px 30px;
+        margin-top: auto;
+    }
+    &__up {
+        overflow: hidden;
+        height: fit-content;
+        position: relative;
+        background: #A085BA;
+        border-radius: 40px 0 0 0  !important;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        gap: 14px;
+    }
+
+    &__title {
+        z-index: 2;
+        color: white;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    &__text {
+        z-index: 2;
+        color: white;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__down {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        //height: 100%;
+
+        max-height: 800px;
+        overflow-y: auto;
+    }
+
+    &__down-text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #A085BA
+    }
+
+    &__right {
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 0px 40px 40px 0px !important;
+            object-fit: cover;
+        }
+    }
+    &__star {
+        z-index: 1;
+        position: absolute;
+        &_first {
+            right: -12%;
+            top: -15%;
+            transform: scale(1.2) rotate(8deg);
+        }
+
+        &_second {
+            right: -19%;
+            bottom: -16%;
+            transform: scale(0.6) rotate(56deg);
+        }
+    }
+}
+.star-popup-direction{
+    fill: #AB91C480;
+}
+
+
 @media (max-width: 1440px) { 
     .directions {
         &__content {
@@ -186,5 +298,113 @@
     }
     .direction-button img {
         width: 25px;
+    }
+}
+
+@media (max-width: 1440px) { 
+
+}
+@media (max-width: 1000px) { 
+    .popup-direction {
+
+        &__button{
+            font-size: 18px;
+            border-radius: 20px;
+            padding: 12px 30px;
+        }
+        &__up {
+            border-radius: 40px 0 0 0  !important;
+            padding: 25px;
+            gap: 10px;
+        }
+    
+        &__title {
+            font-size: 40px;
+        }
+    
+        &__text {
+            font-size: 12px;
+        }
+    
+        &__down {
+            padding: 25px;
+            gap: 20px;
+        }
+    
+        &__down-text {
+            font-size: 12px;
+        }
+    
+        &__right {
+            img{
+                border-radius: 0px 40px 40px 0px !important;
+            }
+        }
+        &__star {
+            &_first {
+                right: -12%;
+                top: -15%;
+                transform: scale(1.2) rotate(8deg);
+            }
+    
+            &_second {
+                right: -19%;
+                bottom: -16%;
+                transform: scale(0.6) rotate(56deg);
+            }
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .popup-direction {
+
+        &__button{
+            font-size: 12px;
+            border-radius: 15px;
+            padding: 12px 30px;
+        }
+        &__up {
+            border-radius: 25px 0 0 0  !important;
+            padding: 15px;
+            gap: 4px;
+        }
+    
+        &__title {
+            font-size: 20px;
+        }
+    
+        &__text {
+            font-size: 10px;
+        }
+    
+        &__down {
+            padding: 15px;
+            gap: 15px;
+            min-height: 100px;
+        }
+    
+        &__down-text {
+            max-height: 200px;
+            font-size: 12px;
+        }
+    
+        &__right {
+            img{
+                border-radius: 0px 25px 25px 0px !important;
+            }
+        }
+        &__star {
+            &_first {
+                right: -12%;
+                top: -15%;
+                transform: scale(1.2) rotate(8deg);
+            }
+    
+            &_second {
+                right: -19%;
+                bottom: -16%;
+                transform: scale(0.6) rotate(56deg);
+            }
+        }
     }
 }

@@ -139,3 +139,305 @@
 .down__blur{
 
 }
+.is-close-btn{
+    display: none !important;
+}
+.popups {
+    border-radius: 40px !important;
+    position: relative;
+    &__button {
+        z-index: 10;
+        position: absolute;
+        top: -35px;
+        border: 0;
+        left:0;
+        right:0;
+        margin: auto;
+        background: none;
+        width: 70px;
+        height: 70px;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.2);
+            transition: .3s;
+        }
+    }
+
+    &__button-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__form {
+    }
+}
+.popup-main-application {
+    background: linear-gradient(180deg, #AB91C4 0%, #775C96 100%),
+linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%) !important;
+    padding: 60px 20px !important;
+    max-width:500px !important;
+    &__title {
+        color: white;
+
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+    }
+
+    &__form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    &__input {
+        color: #AB91C4 !important;
+        &::placeholder{
+            color: #AB91C4 !important;
+        }
+        width: 80% !important;
+        border-radius: 15px !important;
+        box-shadow: 0px 2.4393672943115234px 19.514938354492188px 0px #00000040;
+    }
+
+    &__button {
+        font-weight: 300;
+    }
+    &__star {
+        position: absolute;
+        &_first {
+            left: -23%;
+            top: 40%;
+            transform: scale(0.5) rotate(35deg);
+        }
+
+        &_second {
+            right: -17%;
+            bottom: -2%;
+            transform: scale(0.9) rotate(70deg);
+        }
+    }
+}
+.star-popup{
+    fill: #AB91C4;
+}
+@media (max-width: 768px) { 
+    .popups {
+        border-radius: 25px !important;
+        &__button {
+            top: -25px;
+            width: 50px;
+            height: 50px;
+
+            &:hover{
+
+            }
+        }
+    
+    }
+    .popup-main-application {
+
+        max-width:300px !important;
+        padding: 40px 10px !important;
+        &__title {
+            font-size: 14px;
+        }
+    
+        &__form {
+            margin-top: 15px;
+            gap: 15px;
+        }
+    
+        &__input {
+            font-size: 14px !important;
+            border-radius: 10px !important;
+        }
+    
+        &__button {
+            font-size: 14px !important;
+            border-radius: 10px !important;
+        }
+        &__star {
+            position: absolute;
+            &_first {
+                left: -43%;
+                top: 30%;
+                transform: scale(0.2) rotate(35deg);
+            }
+    
+            &_second {
+                right: -38%;
+                bottom: -12%;
+                transform: scale(0.5) rotate(70deg);
+            }
+        }
+    }
+}
+html.with-fancybox {
+    overflow: auto !important;
+}
+
+
+
+
+.popup-sign-up {
+
+
+    background: #FFFFFF !important;
+
+    padding: 80px 40px 40px!important;
+    
+
+    &__form {
+        z-index: 2;
+    }
+
+    &__title{
+        color: #A086BA;
+    }
+    &__wrapper {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__input {
+        width: 100% !important;
+        padding: 15px 20px !important;
+        option{
+            color: #AB91C4BF;
+        }
+    }
+
+    &__star {
+        position: absolute;
+
+        &_first {
+            right: -16%;
+            top: -11%;
+            transform: rotate(7deg) scale(0.8);
+        }
+
+
+        &_second {
+            left: -28%;
+            top: 44%;
+            transform: rotate(-24deg) scale(0.8);
+        }
+
+
+        &_third {
+            right: -18%;
+            bottom: -6%;
+            transform: rotate(-11deg) scale(0.9);
+        }
+    }
+    &__select{
+        width: 400px;
+        z-index: 2;
+        position: relative;
+        background-color: #FFFFFF;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button {
+
+        &_first {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_active{
+            border-radius: 15px 15px 0 0 !important;
+        }
+    }
+
+    &__arrow {
+        transition: .3s;
+        transform: scale(1.5);
+        &_active{
+            transform: scale(1.5) rotate(180deg);
+            transition: .3s;
+        }
+    }
+
+
+    &__dropdown-menu {
+        background: #FFFFFF;
+        height: 200px;
+        overflow-y: scroll;
+        position: absolute;
+        display: none;
+        max-height: 0;
+        transition: .3s;
+        padding: 15px 20px !important;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        &_active{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: .3s;
+            max-height: 100vh;
+        }
+    }
+
+    &__dropdown-element {
+        list-style-type: none;
+        color: #AB91C4BF;
+        transition: .3s;
+        &:hover{
+            color: #AB91C4;
+            transition: .3s;
+        }
+    }
+}
+.star-popup-sign-up{
+    fill: #AB91C480;
+}
+
+@media (max-width: 768px) { 
+    .popup-sign-up {
+        padding: 60px 40px 30px!important;
+        &__select{
+            width: 230px;
+
+        }
+        &__dropdown-element {
+            font-size: 14px;
+        }
+        &__star {
+            position: absolute;
+    
+            &_first {
+                right: -32%;
+                top: -16%;
+                transform: rotate(7deg) scale(0.6);
+            }
+    
+    
+            &_second {
+                left: -43%;
+                top: 36%;
+                transform: rotate(-24deg) scale(0.6);
+            }
+    
+    
+            &_third {
+                right: -37%;
+                bottom: -12%;
+                transform: rotate(-11deg) scale(0.7);
+            }
+        }
+ 
+    }
+}

@@ -6,15 +6,15 @@
         <img src = "images/logo.svg" class = "header__logo">
       </a>
       <ul class = "header__menu">
-        <li class = "header-menu__element"><a class = "menu__link header-menu__link">О нас</a></li>
-        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Гелерея</a></li>
-        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Направления</a></li>
-        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Новости</a></li>
-        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Бюро переводов</a></li>
-        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Контакты</a></li>
-        <li class = "header-menu__element"><a class = "menu__link header-menu__link">Отзывы</a></li>
+        <li class = "header-menu__element"><a href = "/about.html" class = "menu__link header-menu__link">О нас</a></li>
+        <li class = "header-menu__element"><a href = "/gallery.html" class = "menu__link header-menu__link">Гелерея</a></li>
+        <li class = "header-menu__element"><a href = "/directions.html" class = "menu__link header-menu__link">Направления</a></li>
+        <li class = "header-menu__element"><a href = "/news.html" class = "menu__link header-menu__link">Новости</a></li>
+        <li class = "header-menu__element"><a href = "/" class = "menu__link header-menu__link">Бюро переводов</a></li>
+        <li class = "header-menu__element"><a href = "/contacts.html" class = "menu__link header-menu__link">Контакты</a></li>
+        <li class = "header-menu__element"><a href = "/reviews.html" class = "menu__link header-menu__link">Отзывы</a></li>
       </ul>
-      <a href = "#" class = "button button__header">Запись на собеседование</a>
+      <a href = "#" class = "button button__header" data-fancybox data-src="#popup-main-application">Запись на собеседование</a>
 
       <div class = "burger__menu">
         <a class="burger header__burger" data-bs-toggle="collapse" href="#burger-content" role="button" aria-expanded="true" aria-controls="burger-content"> 
@@ -28,15 +28,15 @@
             <!--<img src = "images/logo.svg" class = "header__logo">-->
           </a>
           <ul class = "burger__list">
-            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">О нас</a></li>
-            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Гелерея</a></li>
-            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Направления</a></li>
-            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Новости</a></li>
-            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Бюро переводов</a></li>
-            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Контакты</a></li>
-            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "#" class = "menu__link header-menu__link">Отзывы</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "/about.html" class = "menu__link header-menu__link">О нас</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "/gallery.html" class = "menu__link header-menu__link">Гелерея</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "/directions.html" class = "menu__link header-menu__link">Направления</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "/news.html" class = "menu__link header-menu__link">Новости</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "/" class = "menu__link header-menu__link">Бюро переводов</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "/contacts.html" class = "menu__link header-menu__link">Контакты</a></li>
+            <li class = "header-menu__element">@@include('helpers/svg.html', {'class': 'star-list','icon': 'starlist'})<a href = "/reviews.html" class = "menu__link header-menu__link">Отзывы</a></li>
           </ul>
-          <a class = "button button__burger">Запись на собеседование</a>
+          <a class = "button button__burger" data-fancybox data-src="#popup-main-application">Запись на собеседование</a>
           <div class = "burger__icon-star">
             <img class = "icon-star icon-star__first" src="images/burgerstar.svg" alt="">
           </div>

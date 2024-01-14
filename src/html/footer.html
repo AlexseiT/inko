@@ -33,20 +33,62 @@
     </div>
 </footer>
 <!-- Popups -->
-<div id="popup-main-application" style="display:none;max-width:500px;">
-<h2>Hello, world!</h2>
-<p>
-    <input type="text" value="" />
-</p>
-<p>
-    Try hitting the tab key and notice how the focus stays within the dialog
-    itself.
-</p>
-<p>
-    To close dialog hit the esc button, click on the overlay or just click the
-    close button.
-</p>
-<p>
-    Element used to launch the modal would receive focus back after closing.
-</p>
+<div id="popup-main-application" style="display:none;" class = "popups popup-main-application">
+    <button data-fancybox-close="" class="popups__button" title="Close">
+        <img class = "popups__button-img" src="images/popups-button.svg" alt="">
+    </button>
+    <span class = "popup-main-application__title" >Оставьте заявку на бесплатную консультацию педагога</span>
+    <form class = "popups__form popup-main-application__form">
+        <input class="feedback-other__input popup-main-application__input" name="name" type="text" placeholder="Имя">
+        <input class="feedback-other__input popup-main-application__input" name="text" type="text" placeholder="Возраст ребенка">
+        <input class="feedback-other__input popup-main-application__input" name="phone" type="tel"  placeholder="Телефон">
+        <button class="button popup-main-application__button">Жду звонка!</button>
+    </form>
+    <div class = "popup-main-application__star popup-main-application__star_first">@@include('helpers/svg.html', {'class': 'star-popup','icon': 'starlist'})</div>
+    <div class = "popup-main-application__star popup-main-application__star_second">@@include('helpers/svg.html', {'class': 'star-popup','icon': 'starlist'})</div>
+</div>
+
+<div id="popup-sign-up" style="display:none;" class = "popups popup-main-application popup-sign-up">
+    <div class = "popup-sign-up__block">
+        <button data-fancybox-close="" class="popups__button" title="Close">
+            <img class = "popups__button-img" src="images/popups-button.svg" alt="">
+        </button>
+        <span class = "popup-main-application__title popup-sign-up__title" >Запись на пробный урок<br> в «ИнкоЛинк»</span>
+        <form class = "popups__form popup-main-application__form popup-sign-up__form">
+            <input class="feedback-other__input popup-main-application__input popup-sign-up__input" name="name" type="text" placeholder="Имя">
+            <input class="feedback-other__input popup-main-application__input popup-sign-up__input" name="phone" type="tel"  placeholder="Телефон">
+
+            <div class="popup-sign-up__select">
+                <div class="feedback-other__input popup-main-application__input popup-sign-up__input popup-sign-up__button_first">
+                    <span class="popup-sign-up__button_text">Выберите класс</span>
+                    <img class = "popup-sign-up__arrow" src="images/shevron.svg" alt="">
+                    <input class="popup-sign-up__input-hidden" type="hidden" name="class">
+                </div>
+
+                <ul class="popup-sign-up__dropdown-menu">
+                    <li id="Нулевой класс" class="popup-sign-up__dropdown-element">Нулевой класс</li>
+                    <li id="Экспресс-курс подготовки к школе" class="popup-sign-up__dropdown-element">Экспресс-курс подготовки к школе</li>
+                    <li id="Годовой курс подготовки к школе" class="popup-sign-up__dropdown-element">Годовой курс подготовки к школе</li>
+                    <li id="Семейные классы" class="popup-sign-up__dropdown-element">Семейные классы</li>
+                    <li id="Умная продлёнка" class="popup-sign-up__dropdown-element">Умная продлёнка</li>
+                    <li id="Школьный русский язык (5-7 класс)" class="popup-sign-up__dropdown-element">Школьный русский язык (5-7 класс)</li>
+                    <li id="Английский язык для школьников" class="popup-sign-up__dropdown-element">Английский язык для школьников</li>
+                    <li id="Школьные интенсивы (1-4 класс)" class="popup-sign-up__dropdown-element">Школьные интенсивы (1-4 класс)</li>
+                    <li id="Английский язык" class="popup-sign-up__dropdown-element">Английский язык</li>
+                    <li id="Китайский язык" class="popup-sign-up__dropdown-element">Китайский язык</li>
+                    <li id="Немецкий язык" class="popup-sign-up__dropdown-element">Немецкий язык</li>
+                    <li id="Французский язык" class="popup-sign-up__dropdown-element">Французский язык</li>
+                    <li id="Русский язык для иностранцев" class="popup-sign-up__dropdown-element">Русский язык для иностранцев</li>
+                    <li id="Логопед" class="popup-sign-up__dropdown-element">Логопед</li>       
+                </ul>
+            </div>
+
+            <button class="button popup-main-application__button">Записаться</button>
+        </form>
+        <div class = "popup-sign-up__wrapper">
+            <div class = "popup-sign-up__star popup-sign-up__star_first">@@include('helpers/svg.html', {'class': 'star-popup-sign-up','icon': 'starlist'})</div>
+            <div class = "popup-sign-up__star popup-sign-up__star_second">@@include('helpers/svg.html', {'class': 'star-popup-sign-up','icon': 'starlist'})</div>
+            <div class = "popup-sign-up__star popup-sign-up__star_third">@@include('helpers/svg.html', {'class': 'star-popup-sign-up','icon': 'starlist'})</div>
+        </div>
+    </div>
 </div>
