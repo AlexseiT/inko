@@ -367,3 +367,15 @@
 }
 @media (max-width: 378px) { 
 }
+.header_white .header__logo {
+    fill: white;
+}
+.header_scroll .header-menu__link {
+    color: white;
+}
+.header_scroll {
+    background: linear-gradient(170deg, rgb(171, 145, 196) 0%, rgb(171, 145, 196) 0%, rgb(119, 92, 150) 100%) padding-box padding-box, linear-gradient(white, rgb(119, 92, 150)) border-box border-box;
+}
+.header_white .burger__line {
+    background-color: white;
+}

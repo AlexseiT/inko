@@ -1,4 +1,4 @@
-<section class="feedback-other">
+<section class="feedback-other myForm">
     <div class="container feedback-other__container">
         <div class="feedback-other__block">
 
@@ -12,6 +12,10 @@
                 <input class="feedback-other__input" name="text" type="text" placeholder="Желаемая дата экскурсии">
                 <button class="fed__button feedback-other__button">Записаться!</button>
             </form>
+            <div class = "agree__block">
+                <input class = "agree__check" type="checkbox">
+                <span class = "agree__text">Я даю согласие на обработку <a href = "#">персональных данных</a></span>
+            </div>
             <div class = "feedback-other__star-wrapper">
                 <div class = "feedback-other__star feedback-other__star_first">@@include('helpers/svg.html', {'class': 'star-feedback-other','icon': 'starlist'})</div>
                 <div class = "feedback-other__star feedback-other__star_second">@@include('helpers/svg.html', {'class': 'star-feedback-other','icon': 'starlist'})</div>

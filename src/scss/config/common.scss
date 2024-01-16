@@ -447,7 +447,8 @@ html.with-fancybox {
         margin-top: 20px;
         display: flex;
         gap: 10px;
-        z-index: 2;
+        z-index: 3;
+        position: relative;
         &_center{
             justify-content: center;
         }
@@ -463,6 +464,10 @@ html.with-fancybox {
             border-bottom: 1px solid white;
         }
     }
+}
+.popup-main-application__star{
+    pointer-events: none;
+    z-index: 1;
 }
 @media (max-width: 1200px) { 
     .agree {
@@ -500,5 +505,23 @@ html.with-fancybox {
 }
 .fed__button_disable{
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.75;
+}
+.popups__form .agree__block{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+}
+.popups__form .agree__text{
+    text-align: center;
+}
+.popup-sign-up .agree__text{
+    color: #AB91C4;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+}
+.popup-sign-up .agree__text a{
+    border-bottom: 1px solid #AB91C4;
 }

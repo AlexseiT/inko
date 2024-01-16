@@ -3,11 +3,11 @@
     <div class = "burger__tint"></div>
     <section class="container header__wrapper">
       <a href = "/Inko-page/"class = "logo__wrapper">
-        <img src = "images/logo.svg" class = "header__logo">
+        @@include('helpers/svg.html', {'class': 'header__logo','icon': 'logo-header'})
       </a>
       <ul class = "header__menu">
         <li class = "header-menu__element"><a href = "/Inko-page/about.html" class = "menu__link header-menu__link">О нас</a></li>
-        <li class = "header-menu__element"><a href = "/Inko-page/gallery.html" class = "menu__link header-menu__link">Гелерея</a></li>
+        <li class = "header-menu__element"><a href = "/Inko-page/gallery.html" class = "menu__link header-menu__link">Галерея</a></li>
         <li class = "header-menu__element"><a href = "/Inko-page/directions.html" class = "menu__link header-menu__link">Направления</a></li>
         <li class = "header-menu__element"><a href = "/Inko-page/news.html" class = "menu__link header-menu__link">Новости</a></li>
         <li class = "header-menu__element"><a href = "https://old.incolink.ru/buro/" class = "menu__link header-menu__link">Бюро переводов</a></li>
@@ -24,7 +24,7 @@
         </a>
         <div class = "burger__content collapse" id = "burger-content">
           <a href = "#" class = "logo__wrapper logo__burger">
-            @@include('helpers/svg.html', {'class': 'header__logo burger__logo','icon': 'logo-burger'})
+            @@include('helpers/svg.html', {'class': 'header__logo burger__logo','icon': 'logo-header'})
             <!--<img src = "images/logo.svg" class = "header__logo">-->
           </a>
           <ul class = "burger__list">

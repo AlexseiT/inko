@@ -193,7 +193,11 @@ function initCloseButtons(){
 }
 function BindPopup(){
     Fancybox.bind('[data-fancybox]', {
-        // Custom options for all galleries
+        on: {
+            done: (fancybox) => {
+                initAgreeCheckForm(fancybox.container);
+            },
+        }
       });    
 }
 
@@ -225,16 +229,26 @@ function initDropDownPopup(){
         })
     }
 }
-function initAgreeCheckForm(){
-
-    const check = document.querySelector('.agree__check')
-    if(check){
-        let fed__button = document.querySelector('.fed__button');
-        fed__button.classList.add("fed__button_disable");
-        check.addEventListener('click', (event) => {
-            fed__button.classList.toggle("fed__button_disable");
-        })
-    }
+function initAgreeCheckForm(root){
+    console.log(root);
+    let forms = root.querySelectorAll(".myForm");
+    
+    forms.forEach(async (form) => {
+        let check = form.querySelector('.agree__check')
+        if(check)
+        {
+            
+            let fed__button = form.querySelector('.fed__button');
+            if(fed__button && !check.classList.contains('withEvent'))
+            {
+                fed__button.classList.add("fed__button_disable");
+                check.classList.add('withEvent');
+                check.addEventListener('click', (event) => {
+                    fed__button.classList.toggle("fed__button_disable");
+                });
+            }
+        }
+      });
 }
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
@@ -250,5 +264,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initButtonGalleryOpen();
     initSliderReviews();
     BindPopup();
-    initAgreeCheckForm();
+    initAgreeCheckForm(document);
 })
