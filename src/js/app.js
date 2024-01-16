@@ -225,7 +225,17 @@ function initDropDownPopup(){
         })
     }
 }
+function initAgreeCheckForm(){
 
+    const check = document.querySelector('.agree__check')
+    if(check){
+        let fed__button = document.querySelector('.fed__button');
+        fed__button.classList.add("fed__button_disable");
+        check.addEventListener('click', (event) => {
+            fed__button.classList.toggle("fed__button_disable");
+        })
+    }
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initDropDownPopup();
@@ -240,4 +250,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initButtonGalleryOpen();
     initSliderReviews();
     BindPopup();
+    initAgreeCheckForm();
 })

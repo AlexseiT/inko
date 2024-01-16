@@ -1,8 +1,10 @@
 .gallery {
-
+    position: relative;
     &__container {
-        margin-top: 120px;
+        padding-top: 120px;
         //position: relative;
+        z-index: 2;
+        position: relative;
     }
 
     &__star {
@@ -91,7 +93,7 @@
     .gallery {
 
         &__container {
-            margin-top: 120px;
+            padding-top: 120px;
         }
     
         &__star {
@@ -135,7 +137,7 @@
     .gallery {
 
         &__container {
-            margin-top: 120px;
+            padding-top: 120px;
         }
     
         &__star {
@@ -179,7 +181,7 @@
     .gallery {
 
         &__container {
-            margin-top: 60px;
+            padding-top: 60px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -244,7 +246,7 @@
     .gallery {
 
         &__container {
-            margin-top: 60px;
+            padding-top: 60px;
         }
     
         &__star {
@@ -290,7 +292,7 @@
     .gallery {
 
         &__container {
-            margin-top: 60px;
+            padding-top: 60px;
         }
     
         &__star {

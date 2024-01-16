@@ -1,7 +1,9 @@
 
 .news {
-
+    position: relative;
     &__container {
+        z-index: 2;
+        position: relative;
     }
 
     &__content {
@@ -35,7 +37,7 @@
 
     }
     &__slider-content{
-        margin-top: 40px;
+        padding-top: 40px;
     }
 }
 

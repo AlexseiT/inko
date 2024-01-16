@@ -1,5 +1,6 @@
 .reviews {
-    margin-top: 100px;
+    padding-top: 100px;
+    position: relative;
     &_img {
         width: auto;
         height: auto;
@@ -12,6 +13,7 @@
     }
 
     &__container {
+        z-index: 2;
         position: relative;
         display: flex;
         justify-content: center;

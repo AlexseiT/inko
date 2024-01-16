@@ -7,8 +7,12 @@
                 <input class="feedback__input" name="name" type="text" placeholder="Имя">
                 <input class="feedback__input" name="phone" type="tel"  placeholder="Телефон">
                 <input class="feedback__input" name="mail" type="email" placeholder="Почта">
-                <button class="feedback__button">Отправить</button>
+                <button class="fed__button feedback__button">Отправить</button>
             </form>
+            <div class = "agree__block">
+                <input class = "agree__check" type="checkbox">
+                <span class = "agree__text">Я даю согласие на обработку <a href = "#">персональных данных</a></span>
+            </div>
             <div class = "feedback__star feedback__star_first">@@include('helpers/svg.html', {'class': 'star-feedback','icon': 'starlist'})</div>
             <div class = "feedback__star feedback__star_second">@@include('helpers/svg.html', {'class': 'star-feedback','icon': 'starlist'})</div>
             <div class = "feedback__star feedback__star_third">@@include('helpers/svg.html', {'class': 'star-feedback','icon': 'starlist'})</div>

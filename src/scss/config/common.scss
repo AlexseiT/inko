@@ -441,3 +441,64 @@ html.with-fancybox {
  
     }
 }
+.agree {
+    
+    &__block {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 2;
+        &_center{
+            justify-content: center;
+        }
+    }
+
+    &__check {
+    }
+
+    &__text {
+        color: white;
+        font-size: 18px;
+        a{
+            border-bottom: 1px solid white;
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .agree {
+
+        &__block {
+            justify-content: center;
+        }
+    
+        &__check {
+        }
+    
+        &__text {
+            color: white;
+            a{
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .agree {
+
+        &__block {
+            justify-content: center;
+        }
+    
+        &__check {
+        }
+    
+        &__text {
+        font-size: 14px;
+        text-align: center;
+        }
+    }
+}
+.fed__button_disable{
+    pointer-events: none;
+    opacity: 0.5;
+}

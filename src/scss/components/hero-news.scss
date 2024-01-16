@@ -1,5 +1,5 @@
 .hero-news {
-    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../images/hero-news.jpg) no-repeat 50% 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-news.jpg) no-repeat 50% 0%;
     &__container {
     }
 
@@ -77,7 +77,7 @@
 }
 @media (max-width: 768px) { 
     .hero-news {
-        background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../images/hero-news.jpg) no-repeat 95% 0%;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-news.jpg) no-repeat 95% 0%;
         &__container {
         }
     
